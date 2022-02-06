@@ -1,0 +1,19 @@
+.headerWrapper {
+  @apply bg-white;
+}
+
+.header {
+  @apply flex py-4 sm:py-6;
+}
+
+.logo {
+  @apply w-4/6 sm:w-2/6 relative flex items-center;
+}
+
+.logoImg {
+ @apply h-auto;
+}
+
+.menu {
+  @apply w-4/6 flex items-center justify-end;
+}

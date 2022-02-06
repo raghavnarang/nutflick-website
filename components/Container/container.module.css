@@ -1,0 +1,3 @@
+.nfContainer {
+  @apply container mx-auto block px-5 md:px-6 xl:px-0;
+}

@@ -1,0 +1,35 @@
+.headerCategoriesWrapper {
+    @apply bg-amber-700;
+}
+
+.headerCategories nav {
+    @apply flex items-center;
+}
+
+.headerCategories ul {
+    @apply flex overflow-x-scroll;
+}
+
+.headerCategories ul li {
+    @apply transition flex-grow flex-shrink-0;
+}
+
+.headerCategories ul li.active, .headerCategories ul li:hover {
+    @apply bg-amber-600;
+}
+
+.headerCategories a {
+    @apply text-white py-3 px-5 text-sm 2xl:text-base text-center flex items-center h-full;
+}
+
+.categoriesText {
+    @apply text-white mr-5 hidden sm:block;
+}
+
+.swipeCategories {
+    @apply sm:hidden flex items-center justify-center pt-2 text-amber-700 italic text-xs;
+}
+
+.swipeCategories span {
+    @apply px-3;
+}

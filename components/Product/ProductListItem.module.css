@@ -1,0 +1,27 @@
+.productImage {
+    @apply relative h-40 sm:h-64 overflow-hidden rounded;
+}
+
+.productImageBack {
+    @apply absolute bg-cover bg-center bg-no-repeat blur inset-0 opacity-80;
+}
+
+.productInfo {
+    @apply pt-3;
+}
+
+.priceBox {
+    @apply flex justify-between items-center;
+}
+
+.productInfo .price {
+    @apply font-bold text-lg text-amber-700;
+}
+
+.productInfo .price span {
+    @apply text-sm font-normal ml-1;
+}
+
+.productInfo .weights {
+    @apply text-xs text-gray-500 mt-2;
+}

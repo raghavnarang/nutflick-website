@@ -1,0 +1,7 @@
+.productList {
+    @apply grid gap-5 md:gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6;
+}
+
+.product {
+    @apply bg-blue-400 h-10;
+}

@@ -1,0 +1,7 @@
+.headerTopWrapper {
+  @apply bg-amber-600;
+}
+
+.headerTop {
+  @apply text-sm text-right py-2 text-white;
+}

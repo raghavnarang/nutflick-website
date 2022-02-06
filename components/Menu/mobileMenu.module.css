@@ -1,0 +1,43 @@
+.menuWrapper {
+  @apply md:hidden;
+}
+
+.toggle {
+  @apply text-gray-700 cursor-pointer;
+}
+
+.sidebar {
+  @apply fixed inset-0 bg-white border-r border-gray-700 border-solid z-10 p-10;
+}
+
+.menu li {
+  @apply py-3 first:pt-0 last:pb-0 border-solid border-b border-gray-300 last:border-none;
+}
+
+.menu li a {
+  @apply h-14 flex justify-center items-center;
+}
+
+.menu li.active a {
+  @apply bg-amber-600 text-white rounded-md;
+}
+
+.close {
+  @apply flex justify-end mb-8;
+}
+
+.transitionEnter {
+  @apply transition-transform -translate-x-full duration-500 ease-out;
+}
+
+.transitionEnterActive, .transitionEnterDone {
+  @apply translate-x-0;
+}
+
+.transitionExit {
+  @apply transition-transform translate-x-0 duration-500 ease-in;
+}
+
+.transitionExitActive, .transitionExitDone {
+  @apply -translate-x-full;
+}

@@ -3,27 +3,31 @@
 }
 
 .toggle {
-  @apply text-gray-700 cursor-pointer;
+  @apply text-gray-700 cursor-pointer ml-3;
 }
 
 .sidebar {
-  @apply fixed inset-0 bg-white border-r border-gray-700 border-solid z-10 p-10;
+  @apply fixed inset-0 bg-white border-r border-gray-700 border-solid z-10 px-8 py-5 overflow-scroll w-5/6;
 }
 
 .menu li {
-  @apply py-3 first:pt-0 last:pb-0 border-solid border-b border-gray-300 last:border-none;
+  @apply py-2 first:pt-0 last:pb-0 border-solid border-b border-gray-300 last:border-none;
 }
 
 .menu li a {
-  @apply h-14 flex justify-center items-center;
+  @apply text-sm;
 }
 
-.menu li.active a {
-  @apply bg-amber-600 text-white rounded-md;
+.menuSectionTitle {
+  @apply font-bold mb-4 block;
+}
+
+.menuSection {
+  @apply mb-8;
 }
 
 .close {
-  @apply flex justify-end mb-8;
+  @apply flex justify-end mb-2;
 }
 
 .transitionEnter {
@@ -40,4 +44,8 @@
 
 .transitionExitActive, .transitionExitDone {
   @apply -translate-x-full;
+}
+
+.menuIcons {
+  @apply flex;
 }

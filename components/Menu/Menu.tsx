@@ -3,13 +3,14 @@ import MobileMenu from "./MobileMenu";
 
 interface MenuProps {
   links: { label: string; link?: string }[];
+  categories?: { link: string; label: string }[];
   showCart?: boolean;
 }
 
-const Menu: React.FC<MenuProps> = (props) => (
+const Menu: React.FC<MenuProps> = ({ categories, ...props }) => (
   <>
     <DesktopMenu {...props} />
-    <MobileMenu {...props} />
+    <MobileMenu {...props} categories={categories} />
   </>
 );
 

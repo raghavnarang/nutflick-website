@@ -3,7 +3,7 @@
 }
 
 .menuItem {
-  @apply mr-4 lg:mr-7 text-amber-700 last:mr-0 text-sm 2xl:text-base text-center;
+  @apply mr-4 lg:mr-7 last:mr-0 text-sm 2xl:text-base text-center;
 }
 
 .menuItem.active {
@@ -12,20 +12,4 @@
 
 .menuItem.active {
   @apply bg-amber-600 text-white;
-}
-
-.menuItem.cart a {
-  @apply flex justify-center items-center;
-}
-
-.menuItem.cart a .cartIcon {
-  @apply w-5 h-5 mr-1;
-}
-
-.menuItem.cart a span {
-  @apply w-6 h-6 bg-amber-600 rounded-full text-white flex items-center justify-center text-xs ml-2;
-}
-
-.menuItem.cart.active a span {
-  @apply bg-white text-amber-600;
 }

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import Container from "../Container/Container";
 import Menu from "../Menu/Menu";
 import styles from "./header.module.css";
@@ -8,10 +7,11 @@ import HeaderTop from "./HeaderTop";
 
 const Header = () => {
   const links = [
-    { link: "#", label: "Home" },
     { link: "#", label: "About" },
     { link: "#", label: "Contact" },
-    { link: "#", label: "Login/Register" },
+    { link: "#", label: "FAQ" },
+    { link: "#", label: "Privacy Policy" },
+    { link: "#", label: "Terms & Conditions" },
   ];
 
   const categories = [
@@ -20,6 +20,9 @@ const Header = () => {
     { link: "#", label: "Badam (Almonds)" },
     { link: "#", label: "Pista (Pistachio)" },
     { link: "#", label: "Kishmish" },
+    { link: "#", label: "Kesar (Saffron)" },
+    { link: "#", label: "Kesar (Saffron)" },
+    { link: "#", label: "Kesar (Saffron)" },
     { link: "#", label: "Kesar (Saffron)" },
     { link: "#", label: "Kesar (Saffron)" },
     { link: "#", label: "Kesar (Saffron)" },
@@ -40,7 +43,7 @@ const Header = () => {
               />
             </div>
             <div className={styles.menu}>
-              <Menu links={links} />
+              <Menu links={links} categories={categories} />
             </div>
           </Container>
         </header>

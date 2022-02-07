@@ -1,0 +1,27 @@
+a.miniCart {
+  @apply flex items-center;
+}
+
+a.miniCart .cartIcon {
+  @apply w-5 h-5 mr-1;
+}
+
+a.miniCart span {
+  @apply w-6 h-6 bg-amber-600 rounded-full text-white flex items-center justify-center text-xs ml-2;
+}
+
+a.miniCart.active span {
+  @apply bg-white text-amber-600;
+}
+
+a.miniCart.mobileIcon {
+  @apply relative mr-2;
+}
+
+a.miniCart.mobileIcon .cartIcon {
+  @apply mr-0;
+}
+
+a.miniCart.mobileIcon span {
+  @apply absolute -top-2 -right-3 scale-75 ml-0;
+}

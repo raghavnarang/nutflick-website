@@ -2,13 +2,13 @@ import Link from "next/link";
 import cx from "classNames";
 import { ShoppingCartIcon } from "@heroicons/react/outline";
 import styles from "./desktopMenu.module.css";
+import MiniCart from "../Cart/MiniCart";
 
 interface DesktopMenuProps {
   links: { label: string; link?: string }[];
-  showCart?: boolean;
 }
 
-const DesktopMenu: React.FC<DesktopMenuProps> = ({ links, showCart = true }) => {
+const DesktopMenu: React.FC<DesktopMenuProps> = ({ links }) => {
   return links.length > 0 ? (
     <nav className={styles.menu}>
       <ul>
@@ -23,16 +23,16 @@ const DesktopMenu: React.FC<DesktopMenuProps> = ({ links, showCart = true }) => 
               </li>
             )
         )}
-        {showCart && (
-          <li className={cx(styles.menuItem, styles.cart)}>
-            <Link href={"/#"}>
-              <a>
-                <ShoppingCartIcon className={styles.cartIcon} />
-                Cart<span>0</span>
-              </a>
-            </Link>
-          </li>
-        )}
+
+        {/* Login Link */}
+        <li className={styles.menuItem}>
+          <Link href={"#"}>Login/Register</Link>
+        </li>
+
+        {/* Cart Link */}
+        <li className={styles.menuItem}>
+          <MiniCart />
+        </li>
       </ul>
     </nav>
   ) : null;

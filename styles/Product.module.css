@@ -1,0 +1,23 @@
+.product {
+    @apply flex xl:px-52;
+}
+
+.productInfo {
+    @apply lg:w-3/6 lg:mr-10;
+}
+
+.backButton {
+    @apply flex items-center mb-5;
+}
+
+.backButtonIcon {
+    @apply mr-2;
+}
+
+.productTitle {
+    @apply text-3xl mb-5;
+}
+
+.description {
+    @apply mb-10;
+}

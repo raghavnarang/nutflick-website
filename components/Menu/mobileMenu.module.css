@@ -1,5 +1,5 @@
 .menuWrapper {
-  @apply md:hidden;
+  @apply lg:hidden;
 }
 
 .toggle {

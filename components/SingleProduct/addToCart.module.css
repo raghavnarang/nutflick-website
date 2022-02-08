@@ -1,0 +1,43 @@
+.wrapper {
+    @apply w-full mb-8;
+}
+
+.selectorRow {
+    @apply flex bg-white rounded p-4 flex-col md:flex-row;
+}
+
+.selectorBox {
+    @apply md:pr-3 last:pr-0 flex items-center md:block;
+}
+
+.priceBox {
+    @apply md:w-3/12;
+}
+
+.qtyBox, .sizeBox {
+    @apply md:w-5/12;
+}
+
+.boxLabel {
+    @apply text-sm block mb-1 w-2/6;
+}
+
+.weight, .qty {
+    @apply px-3 h-9 md:h-12 w-4/6 md:w-full md:text-lg outline-none border border-amber-500 rounded-sm;
+}
+
+.weight, .price {
+    @apply mb-3 md:mb-0;
+}
+
+.price {
+    @apply md:text-2xl md:mt-3 block;
+}
+
+.price span {
+    @apply text-sm ml-1;
+}
+
+.addToCart {
+    @apply bg-amber-600 text-white mt-3 w-full h-12 rounded hover:bg-amber-700 transition-colors;
+}

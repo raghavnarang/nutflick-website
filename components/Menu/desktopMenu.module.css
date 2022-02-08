@@ -1,5 +1,5 @@
 .menu ul {
-  @apply hidden sm:flex justify-center items-center;
+  @apply hidden lg:flex justify-center items-center;
 }
 
 .menuItem {

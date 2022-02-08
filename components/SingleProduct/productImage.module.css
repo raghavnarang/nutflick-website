@@ -1,0 +1,15 @@
+.productImage {
+  @apply relative w-3/6 h-96 lg:h-[70vh] overflow-hidden rounded;
+}
+
+.productImageBack {
+  @apply absolute bg-cover bg-center bg-no-repeat blur inset-0 opacity-80;
+}
+
+.productImage.mobile {
+  @apply lg:hidden w-full mb-3;
+}
+
+.productImage.desktop {
+  @apply hidden lg:block;
+}

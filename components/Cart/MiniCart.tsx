@@ -2,7 +2,7 @@ import { ShoppingCartIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 import cx from "classNames";
 import styles from "./miniCart.module.css";
-import { useCart } from "@shopify/hydrogen";
+import { useCartLinesTotalQuantity } from "@shopify/hydrogen";
 
 interface MiniCartProps {
   isActive?: boolean;
@@ -13,7 +13,7 @@ const MiniCart: React.FC<MiniCartProps> = ({
   isActive,
   mobileIcon = false,
 }) => {
-  const { lines } = useCart();
+  const qty = useCartLinesTotalQuantity();
   return (
     <Link href={"/#"}>
       <a
@@ -24,7 +24,7 @@ const MiniCart: React.FC<MiniCartProps> = ({
       >
         <ShoppingCartIcon className={styles.cartIcon} />
         {!mobileIcon && "Cart"}
-        <span className={styles.cartQty}>{lines.length}</span>
+        <span className={styles.cartQty}>{qty}</span>
       </a>
     </Link>
   );

@@ -1,7 +1,5 @@
 import { ArrowLeftIcon } from "@heroicons/react/outline";
 import type { NextPage } from "next";
-import Image from "next/image";
-import cx from "classNames";
 import Layout from "../../components/Layout/Layout";
 import AddToCart from "../../components/SingleProduct/AddToCart";
 import styles from "../../styles/Product.module.css";

@@ -1,51 +1,15 @@
 .cartContainer {
-  @apply bg-white rounded-xl py-10 px-12;
+  @apply overflow-x-auto relative;
 }
 
-.cartLine {
-  @apply flex py-7 border-b last:border-b-0 border-gray-300 text-gray-900;
+.cartTable {
+  @apply w-full text-sm text-left text-gray-500;
 }
 
-.imageWrapper {
-  @apply flex-shrink-0 mr-7;
+.cartHeader {
+  @apply text-xs text-gray-700 uppercase bg-gray-50;
 }
 
-.imageWrapper img {
-  @apply bg-white border border-black border-opacity-5 rounded-xl;
-}
-
-.lineInfo {
-  @apply flex flex-col w-full justify-between items-start flex-grow mr-4;
-}
-
-.productTitle {
-  @apply text-lg font-medium;
-}
-
-.selectedOptions {
-  @apply text-xs space-y-1;
-}
-
-.attributes {
-  @apply text-sm space-y-1;
-}
-
-.priceActions {
-  @apply flex flex-col justify-between items-end;
-}
-
-.price {
-  @apply text-lg;
-}
-
-.removeButton {
-  @apply disabled:pointer-events-auto disabled:cursor-wait;
-}
-
-.removeButtonIcon {
-  @apply h-5 w-5 text-red-600;
-}
-
-.pageTitle {
-  @apply text-2xl;
+.cartHeaderCell {
+  @apply py-3 px-6;
 }

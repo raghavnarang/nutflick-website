@@ -1,0 +1,27 @@
+.cartItem {
+  @apply bg-white border-b;
+}
+
+.cartItemMainCell {
+  @apply py-4 px-6 font-medium text-gray-900 whitespace-nowrap flex items-center h-full;
+}
+
+.cartItemCell {
+  @apply py-4 px-6;
+}
+
+.cartProductImage {
+  @apply rounded-full mr-10;
+}
+
+.cartItemProductTitle {
+  @apply ml-2 block;
+}
+
+.cartItemCell input {
+    @apply px-3 py-2 border border-solid border-gray-300 rounded;
+}
+
+.cartItemCell select {
+    @apply px-3 py-2 border border-solid border-gray-300 rounded cursor-pointer;
+}
